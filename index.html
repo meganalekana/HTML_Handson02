@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img.webp" type="image/x-icon">
+    <title>Forms</title>
+</head>
+<body>
+    <fieldset>
+    <h1>Forms</h1>
+    <!-- Name Field -->
+    <form action="./index1.html" method="get">
+    <label for="name">Name:</label>
+    <input type="text" placeholder="name" id="name" name="username" autocomplete="off" required>
+    <br>
+    <label for="mail-id">Email:</label>
+    <input type="email" placeholder="email" id="mail-id" name="mail-id" autocomplete="off" required>
+    <br>
+    <label for="Phno">Phone No:</label>
+    <input type="number" placeholder="10 digit" id="phno" name="phno" pattern="[0-9]{10}" maxlength="10" autocomplete="off" required>
+    <br>
+    <label for="passcode">password:</label>
+    <input type="password" placeholder="Enter password" id="passcode" name="password" required >
+    <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="female" name="gender" value="female" required><label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label>
+    <input type="radio" id="others" name="gender" value="others" required><label for="others">Others</label>
+    <br>
+    <label for="language">language:</label><br>
+    <input type="radio" name="language" value="react" required><label for ="react" >React</label><br>
+    <input type="radio" name="language" value="angular" required><label for ="angular">Angular</label><br>
+    <input type="radio" name="language" value="vue" required><label for ="vue">vue</label><br>
+    <br>
+    <label for="course" >Course:</label><br>
+    <input type="checkbox" name="Course1" id="MERN" value="MERN"><label for="MERN">MERN</label><br>
+    <input type="checkbox" name="Course2" id="MEAN" value="MEAN"><label for="MEAN">MEAN</label><br>
+    <input type="checkbox" name="Course3" id="MEVN" value="MEVN"><label for="MEVN">MEVN</label><br>
+    <br>
+    <label for="Field">Field:</label>
+    <select name="Field" id="Field">
+        <option value="" >Select Field</option>
+        <option Value="FrontEnd">FrontEnd Developer</option>
+        <option Value="BackEnd">BackEnd Developer</option>
+        <option Value="FullStack">FullStack Developer</option>
+    </select><br>
+    <label for="msg">Any message</label>
+    <textarea cols="10" rows="5" placeholder="Write down something here!!"></textarea>
+    
+    <button>submit</button>
+    <br>
+</fieldset>
+<h1>Tables</h1>
+<a href="./index3.html" >click here</a>   
+</form>
+</body>
+</html>
